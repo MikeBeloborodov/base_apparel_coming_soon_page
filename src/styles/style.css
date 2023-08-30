@@ -13,10 +13,11 @@
 /* Styles */
 
 .page {
+  padding: 0 0 30px;
   background: linear-gradient(
     124deg,
     var(--gradient-1-from) 0%,
-    var(gradient-1-to) 99%
+    var(--gradient-1-to) 99%
   );
 }
 
@@ -24,9 +25,23 @@
   padding: 29px;
 }
 
+.header__link {
+  display: block;
+  inline-size: fit-content;
+  block-size: fit-content;
+}
+
+.header__link:focus {
+  outline: none;
+}
+
+.header__link:focus-visible {
+  outline: 2px solid var(--warning-clr);
+}
+
 .header__logo {
-  width: 100px;
-  height: auto;
+  inline-size: 100px;
+  block-size: auto;
 }
 
 .call-to-action {
@@ -72,6 +87,14 @@
   inline-size: 100%;
 }
 
+.email-form__input:focus {
+  outline: none;
+}
+
+.email-form__input:focus-visible {
+  outline: 2px solid var(--warning-clr);
+}
+
 .email-form__input::placeholder {
   color: var(--placeholder-clr);
 }
@@ -87,6 +110,9 @@
     var(--gradient-2-from) 0%,
     var(--gradient-2-to) 96%
   );
+  transition-duration: 0.2s;
+  transition-property: box-shadow;
+  cursor: pointer;
   inline-size: 65px;
   block-size: 50px;
   inset-block-start: 31px;
@@ -102,4 +128,82 @@
   block-size: 20px;
   inset-block-start: 30%;
   inset-inline-end: 26%;
+}
+
+.email-form__button:hover {
+  box-shadow: 0 20px 30px -5px var(--button-box-shadow-hover);
+  background: transparent;
+  background-color: var(--gradient-2-from);
+}
+
+.email-form__button:focus {
+  outline: none;
+}
+
+.email-form__button:focus-visible {
+  outline: 2px solid var(--warning-clr);
+}
+
+@media (min-width: 1200px) {
+
+  .page {
+    padding: 0;
+  }
+
+  .header {
+    padding: 8vh 0 0 11.4vw;
+  }
+
+  .header__logo {
+    inline-size: 160px;
+  }
+
+  .hero__img {
+    position: absolute;
+    max-height: 100vh;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inline-size: auto;
+  }
+
+  .call-to-action {
+    padding: 9vh 0 0 11.4vw;
+    text-align: start;
+    inline-size: 50%;
+  }
+
+  .call-to-action__heading {
+    font-size: 4rem;
+    line-height: 1.07;
+    letter-spacing: 17px;
+  }
+
+  .call-to-action__text {
+    padding: 21px 8.5vw 0 2px;
+    font-size: 1.03rem;
+    line-height: 1.7;
+  }
+
+  .email-form__fieldset {
+    margin: 39px 7.7vw 0 0;
+    padding: 0;
+  }
+
+  .email-form__input {
+    margin: 0;
+    padding: 19px 0 19px 30px;
+    font-size: 1.03rem;
+  }
+
+  .email-form__button {
+    inline-size: 100px;
+    block-size: 62px;
+    inset-block-start: -0.2vh;
+    inset-inline-end: 7.6vw;
+  }
+
+  .email-form__button::after {
+    inset-block-start: 30%;
+    inset-inline-end: 35%;
+  }
 }

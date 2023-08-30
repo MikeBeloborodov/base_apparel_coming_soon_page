@@ -1,9 +1,9 @@
 :root {
   --accent-text-clr: #ce9797;
   --placeholder-clr: #ce979780;
-  --soft-red: #f96262;
+  --warning-clr: #f96262;
   --button-box-shadow: #f9626280;
-  --dark-grayish-red: #413a3a;
+  --button-box-shadow-hover: #a3292999;
 
   --gradient-1-from: #fff;
   --gradient-1-to: #fff5f5;
