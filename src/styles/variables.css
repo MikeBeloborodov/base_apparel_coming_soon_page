@@ -1,0 +1,14 @@
+:root {
+  --accent-text-clr: #ce9797;
+  --placeholder-clr: #ce979780;
+  --soft-red: #f96262;
+  --button-box-shadow: #f9626280;
+  --dark-grayish-red: #413a3a;
+
+  --gradient-1-from: #fff;
+  --gradient-1-to: #fff5f5;
+  --gradient-2-from: #f8bfbf;
+  --gradient-2-to: #ee8c8c;
+
+  --main-font: 'Josefin Sans';
+}

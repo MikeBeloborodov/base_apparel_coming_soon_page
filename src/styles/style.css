@@ -11,3 +11,95 @@
 }
 
 /* Styles */
+
+.page {
+  background: linear-gradient(
+    124deg,
+    var(--gradient-1-from) 0%,
+    var(gradient-1-to) 99%
+  );
+}
+
+.header {
+  padding: 29px;
+}
+
+.header__logo {
+  width: 100px;
+  height: auto;
+}
+
+.call-to-action {
+  text-align: center;
+}
+
+.call-to-action__heading {
+  padding: 60px 0 0;
+  font-size: 2.5rem;
+  line-height: 1.03;
+  letter-spacing: 11px;
+  text-transform: uppercase;
+}
+
+.heading-accent {
+  color: var(--accent-text-clr);
+  font-weight: 300;
+}
+
+.call-to-action__text {
+  padding: 16px 30px 0;
+  color: var(--accent-text-clr);
+  font-size: 0.9rem;
+  line-height: 1.54;
+  letter-spacing: -0.15px;
+}
+
+.email-form {
+  position: relative;
+}
+
+.email-form__fieldset {
+  margin: 0 20px;
+  border: none;
+}
+
+.email-form__input {
+  margin: 26px 0 0;
+  border: 1px solid var(--accent-text-clr);
+  border-radius: 25px;
+  padding: 14px 0 16px 22px;
+  font-size: 0.89rem;
+  inline-size: 100%;
+}
+
+.email-form__input::placeholder {
+  color: var(--placeholder-clr);
+}
+
+.email-form__button {
+  position: absolute;
+  z-index: 1;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 20px 30px -10px var(--button-box-shadow);
+  background: linear-gradient(
+    130deg,
+    var(--gradient-2-from) 0%,
+    var(--gradient-2-to) 96%
+  );
+  inline-size: 65px;
+  block-size: 50px;
+  inset-block-start: 31px;
+  inset-inline-end: 32px;
+}
+
+.email-form__button::after {
+  content: '';
+  position: absolute;
+  background-image: url(./images/icon-arrow.svg);
+  background-repeat: no-repeat;
+  inline-size: 20px;
+  block-size: 20px;
+  inset-block-start: 30%;
+  inset-inline-end: 26%;
+}

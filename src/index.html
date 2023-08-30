@@ -13,13 +13,16 @@
   <body class="page">
     <header class="header">
       <a href="#0" class="header__link">
-        <img class="logo" src="./images/logo.svg" aria-hidden="true" />
+        <img class="header__logo" src="./images/logo.svg" aria-hidden="true" />
       </a>
     </header>
     <main>
       <section class="hero">
         <picture class="hero__image">
-          <source srcset="./images/hero-desktop.jpg" media="min-width: 600px" />
+          <source
+            srcset="./images/hero-desktop.jpg"
+            media="(min-width: 800px)"
+          />
           <img
             src="./images/hero-mobile.jpg"
             alt="Photo of a beautiful model in a beige shirt."
@@ -27,7 +30,9 @@
         </picture>
       </section>
       <section class="call-to-action">
-        <h1 class="call-to-action">We're coming soon</h1>
+        <h1 class="call-to-action__heading">
+          <span class="heading-accent">We're</span><br />coming soon
+        </h1>
         <p class="call-to-action__text">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
