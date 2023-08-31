@@ -144,10 +144,15 @@
   outline: 2px solid var(--warning-clr);
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
 
   .page {
     padding: 0;
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    position: relative;
+    background-size: 75% 100%;
   }
 
   .header {
@@ -160,7 +165,7 @@
 
   .hero__img {
     position: absolute;
-    max-height: 100vh;
+    block-size: min(100vh, 1024px);
     inset-block-start: 0;
     inset-inline-end: 0;
     inline-size: auto;
